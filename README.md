@@ -62,10 +62,11 @@ http.host == monta.if.its.ac.id
 
    
 **7. Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!**  
-    ```
-    ip.src == 192.168.100.173
-    ```
-    ![No 7](https://user-images.githubusercontent.com/94432967/192090639-585e698a-6171-4fec-b662-c848d6919ee5.png)
+```     
+ip.src == 192.168.100.173    
+```
+
+![No 7](https://user-images.githubusercontent.com/94432967/192090639-585e698a-6171-4fec-b662-c848d6919ee5.png)
     
 
 **Untuk soal 8-10, silahkan baca cerita di bawah ini!**
@@ -73,15 +74,16 @@ http.host == monta.if.its.ac.id
 **Di sebuah planet bernama Viltrumite, terdapat Kementerian Komunikasi dan Informatika yang baru saja menetapkan kebijakan baru. Dalam kebijakan baru tersebut, pemerintah dapat mengakses data pribadi masyarakat secara bebas jika memang dibutuhkan, baik dengan maupun tanpa persetujuan pihak yang bersangkutan. Sebagai mahasiswa yang sedang melaksanakan program magang di kementerian tersebut, kalian mendapat tugas berupa penyadapan percakapan mahasiswa yang diduga melakukan tindak kecurangan dalam kegiatan Praktikum Komunikasi Data dan Jaringan Komputer 2022. Selain itu, terdapat sebuah password rahasia (flag) yang diduga merupakan milik sebuah organisasi bawah tanah yang selama ini tidak sejalan dengan pemerintahan Planet Viltrumite. Tunggu apa lagi, segera kerjakan tugas magang tersebut agar kalian bisa mendapatkan pujian serta kenaikan jabatan di kementerian tersebut!**  
 
 **8. Telusuri aliran paket dalam file .pcap yang diberikan, cari informasi berguna berupa percakapan antara dua mahasiswa terkait tindakan kecurangan pada kegiatan praktikum. Percakapan tersebut dilaporkan menggunakan protokol jaringan dengan tingkat keandalan yang tinggi dalam pertukaran datanya sehingga kalian perlu menerapkan filter dengan protokol yang tersebut.**  
-    Percakapan dilakukan oleh mahasiswa dengan ip address '127.0.0.1' dan '127.0.1.1'. Namun, saat difilter menggunakan
-    ```
-    ip.src == 127.0.0.1 or ip.src == 127.0.1.1
-    ```
-    tidak semua barisnya berisi percakapan. Untuk memfilter hanya percakapannya saja dapat menggunakan
-    ```
-    tcp.flags.push == 1
-    ```
-    ![No 8](https://user-images.githubusercontent.com/94432967/192090768-33b21f22-06a6-4c42-bb1a-5035d0805f7d.png)
+Percakapan dilakukan oleh mahasiswa dengan ip address '127.0.0.1' dan '127.0.1.1'. Namun, saat difilter menggunakan
+```
+ip.src == 127.0.0.1 or ip.src == 127.0.1.1
+```
+tidak semua barisnya berisi percakapan. Untuk memfilter hanya percakapannya saja dapat menggunakan
+```
+tcp.flags.push == 1
+```
+Screenshot:
+![No 8](https://user-images.githubusercontent.com/94432967/192090768-33b21f22-06a6-4c42-bb1a-5035d0805f7d.png)
 
 
 **9. Terdapat laporan adanya pertukaran file yang dilakukan oleh kedua mahasiswa dalam percakapan yang diperoleh, carilah file yang dimaksud! Untuk memudahkan laporan kepada atasan, beri nama file yang ditemukan dengan format [nama_kelompok].des3 dan simpan output file dengan nama “flag.txt”.**  
