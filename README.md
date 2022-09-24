@@ -98,7 +98,10 @@ Apabila file flag.txt dibuka, maka akan terlihat:
 
 
 **10. Temukan password rahasia (flag) dari organisasi bawah tanah yang disebutkan di atas!**  
-Berdasarkan percakapan yang ditemukan pada nomer 8, ditemukan hint bahwa:  
+Isi dari file flag.txt, seperti yang tertera di atas, adalah ```JaRkOm2022{8uK4N_CtF_k0k_h3h3h3}```.  
+![image](https://user-images.githubusercontent.com/80016547/192104691-4f0f1743-1f0c-4814-83e3-ff717ed1e659.png)  
+
+Sedangkan untuk password yang digunakan untuk membuka file des3, berdasarkan percakapan yang ditemukan pada nomer 8, ditemukan hint bahwa:  
 ```...passwordnya itu pake nama karakter anime yang kembar lima itu lho, jangan lupa pake huruf kecil semua```  
 Melalui pencarian Google, didapatkan bahwa kembar lima tersebut memiliki nama belakang "Nakano", sehingga dapat disimpulkan bahwa password adalah nakano.
 ![image](https://user-images.githubusercontent.com/80016547/192101115-45ac3695-758b-47f5-8f22-54b3977da067.png)
