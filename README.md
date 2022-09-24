@@ -9,7 +9,16 @@ Anggota:
 
 ## Soal
 **1. Sebutkan web server yang digunakan pada "monta.if.its.ac.id"!** 
+```
+http.host == monta.if.its.ac.id
+```
+<img width="680" alt="Screen Shot 2022-09-24 at 16 08 37" src="https://user-images.githubusercontent.com/72302421/192089964-c056dc7b-7829-4243-a867-5692098e6d82.png">
+
 **2. Ishaq sedang bingung mencari topik ta untuk semester ini, lalu ia datang ke website monta dan menemukan detail topik pada website “monta.if.its.ac.id” , judul TA apa yang dibuka oleh ishaq?**  
+<img width="682" alt="Screen Shot 2022-09-24 at 16 09 34" src="https://user-images.githubusercontent.com/72302421/192090028-96db7b25-d224-4d26-9d85-f66a866e2531.png">
+
+<img width="682" alt="Screen Shot 2022-09-24 at 16 09 53" src="https://user-images.githubusercontent.com/72302421/192090046-7b646c5f-640f-45ea-b3b9-bc90780f535c.png">
+
 **3. Filter sehingga wireshark hanya menampilkan paket yang menuju port 80!**  
     Untuk menampilkan paket yang menuju port 80, dapat menggunakan:
     ```
