@@ -87,6 +87,22 @@ Screenshot:
 
 
 **9. Terdapat laporan adanya pertukaran file yang dilakukan oleh kedua mahasiswa dalam percakapan yang diperoleh, carilah file yang dimaksud! Untuk memudahkan laporan kepada atasan, beri nama file yang ditemukan dengan format [nama_kelompok].des3 dan simpan output file dengan nama “flag.txt”.**  
+Pertama, dilakukan pencarian paket yang berasal dari port 9002, seperti yang tertera pada percakapan no. 8, dengan ``tcp.srcport eq 9002``  
+![image](https://user-images.githubusercontent.com/80016547/192101211-4c8bbec6-146e-450d-a9bb-407bc439c855.png)  
+Kemudian, didapatkan paket yang memuat file salt. Paket tersebut kemudian di-follow melalui stream protokol TCP, sehingga didapatkan  
+![image](https://user-images.githubusercontent.com/80016547/192101343-8cd2fe27-a3df-49e4-8fed-a8868562af3d.png)
+Hasil stream kemudian di-save dalam bentuk raw dengan nama E05, format des3. Setelah itu bukalah gitbash dan jalankan command ```openssl des3 -d -salt -in E05.des3 -out flag.txt -k nakano```  
+![image](https://user-images.githubusercontent.com/80016547/192101434-9af8c6c3-802f-4302-9703-15f26ebdc47c.png)  
+Apabila file flag.txt dibuka, maka akan terlihat:  
+![image](https://user-images.githubusercontent.com/80016547/192101476-a3f533f4-52c0-4f27-a9fd-4d9e6caf26c1.png)
+
+
 **10. Temukan password rahasia (flag) dari organisasi bawah tanah yang disebutkan di atas!**  
+Berdasarkan percakapan yang ditemukan pada nomer 8, ditemukan hint bahwa:  
+```...passwordnya itu pake nama karakter anime yang kembar lima itu lho, jangan lupa pake huruf kecil semua```  
+Melalui pencarian Google, didapatkan bahwa kembar lima tersebut memiliki nama belakang "Nakano", sehingga dapat disimpulkan bahwa password adalah nakano.
+![image](https://user-images.githubusercontent.com/80016547/192101115-45ac3695-758b-47f5-8f22-54b3977da067.png)
 
 ## Kendala
+
+- Pada saat praktikum, mengalami masalah saat decrypt file
