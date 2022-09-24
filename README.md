@@ -20,28 +20,28 @@ http.host == monta.if.its.ac.id
 <img width="682" alt="Screen Shot 2022-09-24 at 16 09 53" src="https://user-images.githubusercontent.com/72302421/192090046-7b646c5f-640f-45ea-b3b9-bc90780f535c.png">
 
 **3. Filter sehingga wireshark hanya menampilkan paket yang menuju port 80!**  
-    Untuk menampilkan paket yang menuju port 80, dapat menggunakan:
+    Untuk menampilkan paket yang menuju port 80, dapat menggunakan 
     ```
     tcp.dstport eq 80
-    ```
+    ```  
     Screenshot:  
     ![image](https://user-images.githubusercontent.com/80016547/192089256-788a83a4-b3d7-4f0e-8758-22ed072d7ce3.png)
 
     
 **4. Filter sehingga wireshark hanya mengambil paket yang berasal dari port 21!**  
-    Untuk mengambil paket yang berasal port 21, dapat menggunakan:
+    Untuk mengambil paket yang berasal port 21, dapat menggunakan 
     ```
     tcp.srcport eq 21
-    ```
+    ```  
     Screenshot:  
     ![image](https://user-images.githubusercontent.com/80016547/192089335-e12be13c-e09d-4695-9a88-939ec6f499df.png)
 
     
 **5. Filter sehingga wireshark hanya mengambil paket yang berasal dari port 443!**  
-    Untuk mengambil paket yang berasal port 443, dapat menggunakan:
+    Untuk mengambil paket yang berasal port 443, dapat menggunakan 
     ```
     tcp.srcport eq 443
-    ```
+    ```  
     Screenshot:  
     ![image](https://user-images.githubusercontent.com/80016547/192089430-fc16b68a-68a0-4285-b17c-03a109a83891.png)
 
